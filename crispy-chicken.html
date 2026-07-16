@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuyuan Delicious Crispy Chicken | Jade Trail</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">Jade Trail</a></div>
+        <div class="nav-links"><button class="lang-toggle">EN / CN</button></div>
+    </nav>
+
+    <section class="section animate-up">
+        <h1>
+            <span class="lang-en">Yuyuan Delicious Crispy Chicken</span>
+            <span class="lang-cn">美味香酥鸡</span>
+        </h1>
+        <p style="font-weight: 700; color: var(--jade); margin-bottom: 24px;">
+            <span class="lang-en">Operating Hours: 04:00 - 00:00 Daily</span>
+            <span class="lang-cn">营业时间：每天 04:00 - 00:00</span>
+        </p>
+        <div class="embed-container">
+            <iframe 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAT4qL1GGw_NcnhZRk4C_0qAijNc93iABY&q=31.230046865262235, 121.49117151803394">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="section story-flex animate-up delay-1">
+        <img src="DSCN3249.jpeg" alt="Ling Ping">
+        <div>
+            <p class="lang-en" style="font-size: 1.1rem;">Bringing delicious, fried crispy chicken to Shanghai since 1998.</p>
+            <p class="lang-cn" style="font-size: 1.1rem; font-family: 'Noto Sans SC', sans-serif;">自1998年以来，一直致力于将美味的炸酥鸡带给上海市民。</p>
+        </div>
+    </section>
+
+    <section class="section" style="max-width: 800px;">
+        <div class="specialty-highlight">
+            <h3 style="color: var(--lantern);">Crispy Chicken 🌶️</h3>
+            <p>Our famous original crispy chicken, fried to golden perfection.</p>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAccordion('poultry')">Chicken Specialties <span class="icon">+</span></button>
+            <div id="poultry" class="accordion-content">
+                <div class="menu-item"><span>Crispy Chicken</span><span>¥15/20</span></div>
+                <div class="menu-item"><span>Chicken Hearts</span><span>¥10</span></div>
+                <div class="menu-item"><span>Chicken Gizzards</span><span>¥10</span></div>
+                <div class="menu-item"><span>Chicken Drumsticks</span><span>¥8</span></div>
+            </div>
+        </div>
+        
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('snacks')">Fried Snacks <span class="icon">+</span></button>
+            <div id="snacks" class="accordion-content">
+                <div class="menu-item"><span>Fish Balls</span><span>¥8</span></div>
+                <div class="menu-item"><span>Crispy Banana</span><span>¥5</span></div>
+                <div class="menu-item"><span>Pumpkin Balls</span><span>¥3</span></div>
+                <div class="menu-item"><span>Taiwanese Sausage</span><span>¥5</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section text-center">
+        <h2>Claim Your Page</h2>
+        <div class="embed-container" style="height: 250px;">[ Tally.so Form ]</div>
+    </footer>
+
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const btnIcon = content.previousElementSibling.querySelector('.icon');
+            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                content.style.maxHeight = "0px";
+                btnIcon.innerHTML = "+";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                btnIcon.innerHTML = "−";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            body.className = localStorage.getItem('jade-lang') || 'lang-en';
+            document.querySelectorAll('.lang-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    body.classList.toggle('lang-en');
+                    body.classList.toggle('lang-cn');
+                    localStorage.setItem('jade-lang', body.className);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

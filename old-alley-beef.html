@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Alley Beef Soup | Jade Trail</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">Jade Trail</a></div>
+        <div class="nav-links"><button class="lang-toggle">EN / CN</button></div>
+    </nav>
+
+    <section class="section animate-up">
+        <h1>
+            <span class="lang-en">Old Alley Beef Soup</span>
+            <span class="lang-cn">老弄堂牛肉汤</span>
+        </h1>
+        <p style="font-weight: 700; color: var(--jade); margin-bottom: 24px;">
+            <span class="lang-en">Operating Hours: 24 Hours Daily</span>
+            <span class="lang-cn">营业时间：24小时全天候</span>
+        </p>
+        <div class="embed-container">
+            <iframe 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAT4qL1GGw_NcnhZRk4C_0qAijNc93iABY&q=31.238394706577907, 121.48373716012216">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="section story-flex animate-up delay-1">
+        <img src="DSCN3226.jpeg" alt="Hua Guomin">
+        <div>
+            <p class="lang-en" style="font-size: 1.1rem;">Started by Hua Guomin’s love for cooking, this stall brings old-fashioned Shanghai cuisine for 35 years and counting.</p>
+            <p class="lang-cn" style="font-size: 1.1rem; font-family: 'Noto Sans SC', sans-serif;">由华国民先生对烹饪的热爱而创立，这家摊位已经传承了35年，始终致力于呈现最地道的上海传统风味。</p>
+        </div>
+    </section>
+
+    <section class="section" style="max-width: 800px;">
+        <div class="specialty-highlight">
+            <h3 style="color: var(--lantern);">Crispy Stir-fried Shredded Pork 🌶️</h3>
+            <p>Our signature dish: tender shredded pork stir-fried in oil until perfectly crispy.</p>
+        </div>
+
+        <!-- Menu Accordions -->
+        <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAccordion('noodles')">Noodle/Rice Dishes <span class="icon">+</span></button>
+            <div id="noodles" class="accordion-content">
+                <div class="menu-item"><span>Beef Soup (Noodles/Rice)</span><span>¥20</span></div>
+                <div class="menu-item"><span>Beef Offal Soup (Noodles/Rice)</span><span>¥25</span></div>
+                <div class="menu-item"><span>Spicy Beef Rice Bowl</span><span>¥28</span></div>
+            </div>
+        </div>
+        
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('specials')">Shanghai Specials <span class="icon">+</span></button>
+            <div id="specials" class="accordion-content">
+                <div class="menu-item"><span>Shanghai Soup Dumplings (Small)</span><span>¥15</span></div>
+                <div class="menu-item"><span>Crab Roe Steamed Buns</span><span>¥28</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section text-center">
+        <h2>Claim Your Page</h2>
+        <div class="embed-container" style="height: 450px; background: transparent;">
+            <iframe 
+                src="https://tally.so/embed/68y6YJ?transparentBackground=1" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0" 
+                title="Claim Your Page Form">
+            </iframe>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const btnIcon = content.previousElementSibling.querySelector('.icon');
+            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                content.style.maxHeight = "0px";
+                btnIcon.innerHTML = "+";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                btnIcon.innerHTML = "−";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            body.className = localStorage.getItem('jade-lang') || 'lang-en';
+            document.querySelectorAll('.lang-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    body.classList.toggle('lang-en');
+                    body.classList.toggle('lang-cn');
+                    localStorage.setItem('jade-lang', body.className);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

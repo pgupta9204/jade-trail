@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanghai Traditional Big Pancake | Jade Trail</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">Jade Trail</a></div>
+        <div class="nav-links"><button class="lang-toggle">EN / CN</button></div>
+    </nav>
+
+    <section class="section animate-up">
+        <h1>
+            <span class="lang-en">Shanghai Traditional-style Big Pancake</span>
+            <span class="lang-cn">上海老式大饼油条</span>
+        </h1>
+        <p style="font-weight: 700; color: var(--jade); margin-bottom: 24px;">
+            <span class="lang-en">Operating Hours: 05:00 - 00:30 Daily</span>
+            <span class="lang-cn">营业时间：每天 05:00 - 00:30</span>
+        </p>
+        <div class="embed-container">
+            <iframe 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                loading="lazy" 
+                allowfullscreen 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAT4qL1GGw_NcnhZRk4C_0qAijNc93iABY&q=31.23901503927277, 121.48277527655864">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="section story-flex animate-up delay-1">
+        <img src="DSCN3231.jpeg" alt="Mr. Yang">
+        <div>
+            <p class="lang-en" style="font-size: 1.1rem;">Bringing the flavors from Henan province into Shanghai for 5 years and counting.</p>
+            <p class="lang-cn" style="font-size: 1.1rem; font-family: 'Noto Sans SC', sans-serif;">将河南的风味带入上海，至今已历经5载岁月。</p>
+        </div>
+    </section>
+
+    <section class="section" style="max-width: 800px;">
+        <div class="specialty-highlight">
+            <h3 style="color: var(--lantern);">Xiandaping (Salty Big Pancake) 🌶️</h3>
+            <p>Our signature traditional salty big pancake, crafted with authentic technique.</p>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAccordion('pancakes')">Pancakes & Dough <span class="icon">+</span></button>
+            <div id="pancakes" class="accordion-content">
+                <div class="menu-item"><span>Salty Big Pancake</span><span>¥2.5</span></div>
+                <div class="menu-item"><span>Sweet Big Pancake</span><span>¥2.5</span></div>
+                <div class="menu-item"><span>Fried Dough Sticks (Youtiao)</span><span>¥2.5</span></div>
+                <div class="menu-item"><span>Sticky Rice Roll</span><span>¥2.5</span></div>
+            </div>
+        </div>
+        
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('drinks')">Drinks & Soups <span class="icon">+</span></button>
+            <div id="drinks" class="accordion-content">
+                <div class="menu-item"><span>Sweet Soy Milk</span><span>¥2.5</span></div>
+                <div class="menu-item"><span>Spicy Soup</span><span>¥5</span></div>
+                <div class="menu-item"><span>Millet Porridge</span><span>¥3</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section text-center">
+        <h2>Claim Your Page</h2>
+        <div class="embed-container" style="height: 250px;">[ Tally.so Form ]</div>
+    </footer>
+
+    <!-- Keep the same JS script from the previous page -->
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const btnIcon = content.previousElementSibling.querySelector('.icon');
+            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                content.style.maxHeight = "0px";
+                btnIcon.innerHTML = "+";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                btnIcon.innerHTML = "−";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            body.className = localStorage.getItem('jade-lang') || 'lang-en';
+            document.querySelectorAll('.lang-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    body.classList.toggle('lang-en');
+                    body.classList.toggle('lang-cn');
+                    localStorage.setItem('jade-lang', body.className);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

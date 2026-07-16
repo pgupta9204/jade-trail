@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wang's Scallion Pancakes | Jade Trail</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">Jade Trail</a></div>
+        <div class="nav-links">
+            <button class="lang-toggle">EN / CN</button>
+        </div>
+    </nav>
+
+    <!-- Header & Location -->
+    <section class="section animate-up">
+        <h1 style="font-size: 2.5rem;">
+            <span class="lang-en">Wang's Scallion Pancakes</span>
+            <span class="lang-cn">老王葱油饼</span>
+        </h1>
+        <p style="font-size: 1.2rem; color: #666; margin-bottom: 8px;">
+            <span class="lang-en">Crispy, flaky, and savory.</span>
+            <span class="lang-cn">酥脆，掉渣，鲜香。</span>
+        </p>
+        <p style="font-weight: 700; color: var(--jade); margin-bottom: 24px;">
+            <span class="lang-en">Operating Hours: 18:00 - 23:30 Daily</span>
+            <span class="lang-cn">营业时间：每天 18:00 - 23:30</span>
+        </p>
+        
+        <!-- AMap Embed -->
+        <div class="embed-container">
+             <p style="color: #666;">[ Paste AMap / Baidu iframe embed here ]</p>
+        </div>
+    </section>
+
+    <!-- Origin Story -->
+    <section class="section story-flex animate-up delay-1">
+        <img src="https://images.unsplash.com/photo-1552089123-2d26224ef4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mr. Wang">
+        <div>
+            <!-- The 3-4 sentence story[cite: 1] -->
+            <p class="lang-en" style="font-size: 1.1rem; margin-bottom: 24px;">Mr. Wang has been flipping scallion pancakes on this exact corner for over 15 years. Using a family recipe passed down from his grandfather, he sources his scallions fresh every morning from local farms. His biggest challenge is managing the long queues that form during the weekend rush.</p>
+            
+            <p class="lang-cn" style="font-size: 1.1rem; font-family: 'Noto Sans SC', sans-serif;">王先生在这个街角摊葱油饼已经超过15年了。他使用祖父传下来的秘方，每天早上从当地农场采购新鲜小葱。他目前面临的最大挑战是如何应对周末客流高峰期排起的长队。</p>
+        </div>
+    </section>
+
+    <!-- Digital Menu -->
+    <section class="section animate-up delay-2" style="max-width: 800px;">
+        <h2>
+            <span class="lang-en">Menu</span>
+            <span class="lang-cn">菜单</span>
+        </h2>
+        
+        <!-- Specialty Dish Highlight -->
+        <div class="specialty-highlight">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h3 style="color: var(--lantern); margin: 0;">
+                    <span class="lang-en">Signature Scallion Pancake 🌶️</span>
+                    <span class="lang-cn">招牌葱油饼 🌶️</span>
+                </h3>
+                <span style="font-size: 1.5rem; font-weight: bold;">¥8</span>
+            </div>
+            <p>
+                <span class="lang-en">Our famous flaky pancake layered with local scallions and brushed with a secret spicy chili oil.</span>
+                <span class="lang-cn">我们著名的酥脆葱油饼，夹有当地新鲜小葱，刷上秘制辣椒油。</span>
+            </p>
+        </div>
+
+        <!-- Accordion Categories -->
+        <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAccordion('menu-drinks')">
+                <span class="lang-en">Drinks</span>
+                <span class="lang-cn">饮品</span> 
+                <span class="icon">+</span>
+            </button>
+            <div id="menu-drinks" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fresh Soy Milk (Sweet)</span>
+                        <span class="lang-cn">新鲜豆浆（甜）</span>
+                    </span>
+                    <span style="font-weight: bold;">¥5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Plum Juice</span>
+                        <span class="lang-cn">酸梅汤</span>
+                    </span>
+                    <span style="font-weight: bold;">¥6</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claim Your Page Footer -->
+    <footer class="section text-center animate-up delay-3" style="background-color: #f9f9f9; border-top: 1px solid #eee;">
+        <h2>
+            <span class="lang-en">Are you the owner? Claim this page.</span>
+            <span class="lang-cn">您是摊主吗？认领此页面。</span>
+        </h2>
+        <div class="embed-container" style="max-width: 600px; margin: 40px auto 0; height: 250px;">
+            <p style="color: #666;">[ Tally.so Vendor Claim Form Embed Goes Here[cite: 1] ]</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for Accordion and Language Toggle -->
+    <script>
+        // Smooth Accordion Animation
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const btnIcon = content.previousElementSibling.querySelector('.icon');
+            
+            if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+                content.style.maxHeight = "0px";
+                btnIcon.innerHTML = "+";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                btnIcon.innerHTML = "−";
+            }
+        }
+
+        // Persistent Language Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const savedLang = localStorage.getItem('jade-lang') || 'lang-en';
+            body.className = savedLang;
+
+            const toggleBtns = document.querySelectorAll('.lang-toggle');
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (body.classList.contains('lang-en')) {
+                        body.classList.replace('lang-en', 'lang-cn');
+                        localStorage.setItem('jade-lang', 'lang-cn');
+                    } else {
+                        body.classList.replace('lang-cn', 'lang-en');
+                        localStorage.setItem('jade-lang', 'lang-en');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

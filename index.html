@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Trail | Shanghai Night Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">Jade Trail</a></div>
+        <div class="nav-links">
+            <a href="#vendors">
+                <span class="lang-en">Vendors</span>
+                <span class="lang-cn">摊位</span>
+            </a>
+            <a href="#">
+                <span class="lang-en">B2B Solutions</span>
+                <span class="lang-cn">B2B解决方案</span>
+            </a>
+            <button class="lang-toggle">EN / CN</button>
+            <a href="#claim" class="btn btn-accent">
+                <span class="lang-en">List Your Stall</span>
+                <span class="lang-cn">入驻平台</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 class="animate-up">
+            <span class="lang-en">Shanghai’s Hidden Flavors,<br>Now Online.</span>
+            <span class="lang-cn">上海隐藏的美味，<br>现已上线。</span>
+        </h1>
+        <p class="animate-up delay-1">
+            <span class="lang-en">Discover authentic street food and support local vendors.</span>
+            <span class="lang-cn">探索正宗街头美食，支持本地摊贩。</span>
+        </p>
+        <div class="animate-up delay-2">
+            <a href="#vendors" class="btn btn-primary">
+                <span class="lang-en">Explore Stalls</span>
+                <span class="lang-cn">探索摊位</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Business Model (3 Feature Blocks) -->
+    <section class="section text-center">
+        <h2 class="animate-up">
+            <span class="lang-en">Empowering the Street Stall Economy</span>
+            <span class="lang-cn">赋能地摊经济</span>
+        </h2>
+        <div class="grid-3">
+            <!-- Free Tier -->
+            <div class="card animate-up delay-1">
+                <h3 style="color: var(--jade)">
+                    <span class="lang-en">Free Tier</span>
+                    <span class="lang-cn">免费版</span>
+                </h3>
+                <p>
+                    <span class="lang-en">A digital profile featuring origin stories, hours, and menus for vendors with zero online presence today.</span>
+                    <span class="lang-cn">为当前无网络曝光的摊主提供包含品牌故事、营业时间和菜单的数字档案。</span>
+                </p>
+            </div>
+            <!-- Pro Tier -->
+            <div class="card animate-up delay-2" style="border: 2px solid var(--jade);">
+                <span style="position:absolute; top:0; right:0; background:var(--jade); color:white; padding:4px 12px; border-bottom-left-radius:8px;">¥99/yr</span>
+                <h3 style="color: var(--jade)">
+                    <span class="lang-en">Pro Upgrade</span>
+                    <span class="lang-cn">专业版升级</span>
+                </h3>
+                <p>
+                    <span class="lang-en">Unlock online ordering and receive custom, durable QR code displays to drive physical foot traffic.</span>
+                    <span class="lang-cn">解锁在线点单功能，并获得定制的耐用二维码立牌，以吸引线下客流。</span>
+                </p>
+            </div>
+            <!-- Enterprise Tier -->
+            <div class="card animate-up delay-3">
+                <h3 style="color: var(--jade)">
+                    <span class="lang-en">Enterprise API</span>
+                    <span class="lang-cn">企业级 API</span>
+                </h3>
+                <p>
+                    <span class="lang-en">Secure API routing granting food delivery apps access to exclusive local vendor data.</span>
+                    <span class="lang-cn">安全的 API 路由，为外卖应用提供独家本地摊贩数据访问权限。</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Vendor Grid -->
+    <section id="vendors" class="section bg-light" style="background-color: #f5f5f5;">
+        <h2 class="text-center animate-up">
+            <span class="lang-en">Explore the Jade Trail</span>
+            <span class="lang-cn">探索 Jade Trail 路线</span>
+        </h2>
+        <div class="grid-3">
+            <!-- Vendor Card (Duplicate 5 Times) -->
+            <div class="card vendor-card animate-up delay-1">
+                
+                <div class="vendor-info">
+                    <h3>老弄堂牛肉汤 Old Alley Beef Soup</h3>
+                    <p>Hua Guomin</p>
+                    <a href="old-alley-beef.html" class="btn btn-accent">View Menu</a>
+                </div>
+            </div>
+            <!-- Vendor Card 2: Shanghai Traditional-style Big Pancake and Fried Dough Sticks -->
+            <div class="card vendor-card animate-up delay-2">
+                
+                <div class="vendor-info">
+                    <h3>上海老式大饼油条 Shanghai Traditional-style Big Pancake</h3>
+                    <p>Mr. Yang</p>
+                    <a href="traditional-pancake.html" class="btn btn-accent">View Menu</a>
+                </div>
+            </div>
+            <!-- Vendor Card 3: Ansa Cuisine -->
+            <div class="card vendor-card animate-up delay-3">
+                
+                <div class="vendor-info">
+                    <h3>安撒料理 Ansa Cuisine</h3>
+                    <p>Zhu Liping</p>
+                    <a href="ansa-cuisine.html" class="btn btn-accent">View Menu</a>
+                </div>
+            </div>
+            <!-- Vendor Card 4: Nanchang Mixed Noodles -->
+            <div class="card vendor-card animate-up delay-1">
+                
+                <div class="vendor-info">
+                    <h3>南晶拌粉 Nanchang Mixed Noodles</h3>
+                    <p>Li Yongliang</p>
+                    <a href="nanchang-noodles.html" class="btn btn-accent">View Menu</a>
+                </div>
+            </div>
+            <!-- Vendor Card 5: Yuyuan Delicious Crispy Chicken -->
+            <div class="card vendor-card animate-up delay-2">
+                
+                <div class="vendor-info">
+                    <h3>美味香酥鸡 Yuyuan Delicious Crispy Chicken</h3>
+                    <p>Ling Ping</p>
+                    <a href="crispy-chicken.html" class="btn btn-accent">View Menu</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tally Form CTA -->
+    <footer id="claim" class="section text-center" style="background-color: var(--sesame); color: white;">
+        <h2 class="animate-up">
+            <span class="lang-en">Are you a vendor? Get your free page today.</span>
+            <span class="lang-cn">您是摊主吗？立即获取您的免费主页。</span>
+        </h2>
+        <div class="embed-container animate-up delay-1" style="max-width: 600px; margin: 40px auto 0;">
+            <p style="color: #666;">[ Tally.so Onboarding Form Embed Goes Here[cite: 1] ]</p>
+        </div>
+    </footer>
+
+    <!-- Language Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            // Load saved preference
+            const savedLang = localStorage.getItem('jade-lang') || 'lang-en';
+            body.className = savedLang;
+
+            // Attach toggle function to all language buttons
+            const toggleBtns = document.querySelectorAll('.lang-toggle');
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (body.classList.contains('lang-en')) {
+                        body.classList.replace('lang-en', 'lang-cn');
+                        localStorage.setItem('jade-lang', 'lang-cn');
+                    } else {
+                        body.classList.replace('lang-cn', 'lang-en');
+                        localStorage.setItem('jade-lang', 'lang-en');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
