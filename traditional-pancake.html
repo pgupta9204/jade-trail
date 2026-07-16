@@ -45,32 +45,214 @@
 
     <section class="section" style="max-width: 800px;">
         <div class="specialty-highlight">
-            <h3 style="color: var(--lantern);">Xiandaping (Salty Big Pancake) 🌶️</h3>
-            <p>Our signature traditional salty big pancake, crafted with authentic technique.</p>
+            <h3 style="color: var(--lantern);">
+                <span class="lang-en">Xiandaping (Salty Big Pancake) 🌶️</span>
+                <span class="lang-cn">咸大饼 🌶️</span>
+            </h3>
+            <p>
+                <span class="lang-en">Our signature traditional salty big pancake, crafted with authentic technique.</span>
+                <span class="lang-cn">我们的招牌传统咸大饼，采用正宗工艺精心制作。</span>
+            </p>
         </div>
 
+        <!-- 1. Pancakes & Fried Snacks -->
         <div class="accordion">
-            <button class="accordion-btn" onclick="toggleAccordion('pancakes')">Pancakes & Dough <span class="icon">+</span></button>
-            <div id="pancakes" class="accordion-content">
-                <div class="menu-item"><span>Salty Big Pancake</span><span>¥2.5</span></div>
-                <div class="menu-item"><span>Sweet Big Pancake</span><span>¥2.5</span></div>
-                <div class="menu-item"><span>Fried Dough Sticks (Youtiao)</span><span>¥2.5</span></div>
-                <div class="menu-item"><span>Sticky Rice Roll</span><span>¥2.5</span></div>
+            <button class="accordion-btn" onclick="toggleAccordion('snacks')">
+                <span>
+                    <span class="lang-en">Pancakes & Fried Snacks</span>
+                    <span class="lang-cn">饼与油炸小吃</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="snacks" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Salty Big Pancake</span>
+                        <span class="lang-cn">咸大饼</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sweet Big Pancake</span>
+                        <span class="lang-cn">甜大饼</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fried Dough Sticks (Youtiao)</span>
+                        <span class="lang-cn">油条</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fried Glutinous Rice Cake</span>
+                        <span class="lang-cn">粢饭糕</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sesame Ball</span>
+                        <span class="lang-cn">麻球</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sugar Cake</span>
+                        <span class="lang-cn">糖糕</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Traditional Triangular Sugar Cake</span>
+                        <span class="lang-cn">老式三角糖糕</span>
+                    </span>
+                    <span>¥3.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chive Pocket</span>
+                        <span class="lang-cn">韭菜盒</span>
+                    </span>
+                    <span>¥3.5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fried Radish Pastry (Youdunzi)</span>
+                        <span class="lang-cn">油墩子</span>
+                    </span>
+                    <span>¥3.5</span>
+                </div>
             </div>
         </div>
         
+        <!-- 2. Rice Rolls & Eggs -->
         <div class="accordion" style="margin-top: 16px;">
-            <button class="accordion-btn" onclick="toggleAccordion('drinks')">Drinks & Soups <span class="icon">+</span></button>
-            <div id="drinks" class="accordion-content">
-                <div class="menu-item"><span>Sweet Soy Milk</span><span>¥2.5</span></div>
-                <div class="menu-item"><span>Spicy Soup</span><span>¥5</span></div>
-                <div class="menu-item"><span>Millet Porridge</span><span>¥3</span></div>
+            <button class="accordion-btn" onclick="toggleAccordion('rice_egg')">
+                <span>
+                    <span class="lang-en">Rice Rolls & Eggs</span>
+                    <span class="lang-cn">饭团与茶叶蛋</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="rice_egg" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Glutinous Rice Roll (Cifantuan)</span>
+                        <span class="lang-cn">粢饭团</span>
+                    </span>
+                    <span>¥6</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Tea Egg</span>
+                        <span class="lang-cn">茶叶蛋</span>
+                    </span>
+                    <span>¥2</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Soy Milk & Tofu Pudding -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('soy')">
+                <span>
+                    <span class="lang-en">Soy Milk & Tofu Pudding</span>
+                    <span class="lang-cn">豆浆与豆花</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="soy" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Salty Tofu Pudding</span>
+                        <span class="lang-cn">咸豆花</span>
+                    </span>
+                    <span>¥4</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sweet Tofu Pudding</span>
+                        <span class="lang-cn">甜豆花</span>
+                    </span>
+                    <span>¥4</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Salty Soy Milk</span>
+                        <span class="lang-cn">咸豆浆</span>
+                    </span>
+                    <span>¥4</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sweet Soy Milk</span>
+                        <span class="lang-cn">甜豆浆</span>
+                    </span>
+                    <span>¥2.5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Soups & Congee -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('soups')">
+                <span>
+                    <span class="lang-en">Soups & Congee</span>
+                    <span class="lang-cn">汤与粥</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="soups" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Plain Congee</span>
+                        <span class="lang-cn">白粥</span>
+                    </span>
+                    <span>¥3</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Millet Congee</span>
+                        <span class="lang-cn">小米粥</span>
+                    </span>
+                    <span>¥3</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Black Rice Congee</span>
+                        <span class="lang-cn">黑米粥</span>
+                    </span>
+                    <span>¥3</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Spicy Soup (Hulatang)</span>
+                        <span class="lang-cn">胡辣汤</span>
+                    </span>
+                    <span>¥5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Spicy Soup & Tofu Pudding Mix</span>
+                        <span class="lang-cn">胡辣汤豆花二掺</span>
+                    </span>
+                    <span>¥5</span>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="section text-center">
-        <h2>Claim Your Page</h2>
+        <h2>
+            <span class="lang-en">Claim Your Page</span>
+            <span class="lang-cn">认领您的摊位</span>
+        </h2>
         <div class="embed-container" style="height: 450px; background: transparent;">
             <iframe 
                 src="https://tally.so/embed/68y6YJ?transparentBackground=1" 

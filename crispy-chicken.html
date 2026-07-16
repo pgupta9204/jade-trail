@@ -45,33 +45,312 @@
 
     <section class="section" style="max-width: 800px;">
         <div class="specialty-highlight">
-            <h3 style="color: var(--lantern);">Crispy Chicken 🌶️</h3>
-            <p>Our famous original crispy chicken, fried to golden perfection.</p>
+            <h3 style="color: var(--lantern);">
+                <span class="lang-en">Crispy Chicken 🌶️</span>
+                <span class="lang-cn">香酥鸡 🌶️</span>
+            </h3>
+            <p>
+                <span class="lang-en">Our famous original crispy chicken, fried to golden perfection.</span>
+                <span class="lang-cn">我们的招牌香酥鸡，炸至金黄完美。</span>
+            </p>
         </div>
 
+        <!-- 1. Chicken Specialties -->
         <div class="accordion">
-            <button class="accordion-btn" onclick="toggleAccordion('poultry')">Chicken Specialties <span class="icon">+</span></button>
-            <div id="poultry" class="accordion-content">
-                <div class="menu-item"><span>Crispy Chicken</span><span>¥15/20</span></div>
-                <div class="menu-item"><span>Chicken Hearts</span><span>¥10</span></div>
-                <div class="menu-item"><span>Chicken Gizzards</span><span>¥10</span></div>
-                <div class="menu-item"><span>Chicken Drumsticks</span><span>¥8</span></div>
+            <button class="accordion-btn" onclick="toggleAccordion('chicken')">
+                <span>
+                    <span class="lang-en">Chicken Specialties</span>
+                    <span class="lang-cn">鸡肉类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="chicken" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Crispy Chicken</span>
+                        <span class="lang-cn">香酥鸡</span>
+                    </span>
+                    <span>¥15 / ¥20</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Extra Large Chicken Chop</span>
+                        <span class="lang-cn">特大鸡排</span>
+                    </span>
+                    <span>¥18/piece</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Leg</span>
+                        <span class="lang-cn">鸡腿</span>
+                    </span>
+                    <span>¥8/piece</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Mid Joint Wing</span>
+                        <span class="lang-cn">中翅</span>
+                    </span>
+                    <span>¥8/2 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Wing Tip</span>
+                        <span class="lang-cn">翅尖</span>
+                    </span>
+                    <span>¥10/12 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Boneless Chicken Nugget</span>
+                        <span class="lang-cn">无骨鸡块</span>
+                    </span>
+                    <span>¥4/piece</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Premium Chicken Nuggets</span>
+                        <span class="lang-cn">上好鸡块</span>
+                    </span>
+                    <span>¥10/8 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Tender Roll</span>
+                        <span class="lang-cn">鸡柳卷</span>
+                    </span>
+                    <span>¥10/piece</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Stick</span>
+                        <span class="lang-cn">鸡肉棒</span>
+                    </span>
+                    <span>¥5/skewer</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Cheese-filled Chicken Leg Ring</span>
+                        <span class="lang-cn">爆浆鸡腿圈</span>
+                    </span>
+                    <span>¥8/piece</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Skin</span>
+                        <span class="lang-cn">鸡皮</span>
+                    </span>
+                    <span>¥10/portion</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Skewers & Offal -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('skewers')">
+                <span>
+                    <span class="lang-en">Skewers & Cartilage</span>
+                    <span class="lang-cn">烤串与脆骨</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="skewers" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Tenderloin Meat</span>
+                        <span class="lang-cn">里脊肉</span>
+                    </span>
+                    <span>¥10/4 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Heart</span>
+                        <span class="lang-cn">鸡心</span>
+                    </span>
+                    <span>¥10/7 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Gizzard</span>
+                        <span class="lang-cn">鸡胗</span>
+                    </span>
+                    <span>¥10/4 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Gristle</span>
+                        <span class="lang-cn">骨肉相连</span>
+                    </span>
+                    <span>¥10/4 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Chicken Palm Cartilage</span>
+                        <span class="lang-cn">掌中宝</span>
+                    </span>
+                    <span>¥10/3 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Crispy Bone</span>
+                        <span class="lang-cn">香脆骨</span>
+                    </span>
+                    <span>¥10/4 skewers</span>
+                </div>
             </div>
         </div>
         
+        <!-- 3. Sausages & Meats -->
         <div class="accordion" style="margin-top: 16px;">
-            <button class="accordion-btn" onclick="toggleAccordion('snacks')">Fried Snacks <span class="icon">+</span></button>
+            <button class="accordion-btn" onclick="toggleAccordion('sausages')">
+                <span>
+                    <span class="lang-en">Sausages & Pork</span>
+                    <span class="lang-cn">香肠与猪肉</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="sausages" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Cartilage Sausage</span>
+                        <span class="lang-cn">脆骨肠</span>
+                    </span>
+                    <span>¥10/3 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fried Pork Chop</span>
+                        <span class="lang-cn">炸肉排</span>
+                    </span>
+                    <span>¥5/piece</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Taiwanese Sausage</span>
+                        <span class="lang-cn">台式香肠</span>
+                    </span>
+                    <span>¥5/3 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Wangzhongwang Ham Sausage</span>
+                        <span class="lang-cn">王中王火腿肠</span>
+                    </span>
+                    <span>¥10/3 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Ham Sausage</span>
+                        <span class="lang-cn">火腿肠</span>
+                    </span>
+                    <span>¥2/piece</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Snacks & Vegetables -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('snacks')">
+                <span>
+                    <span class="lang-en">Snacks & Vegetables</span>
+                    <span class="lang-cn">小吃与蔬菜</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
             <div id="snacks" class="accordion-content">
-                <div class="menu-item"><span>Fish Balls</span><span>¥8</span></div>
-                <div class="menu-item"><span>Crispy Banana</span><span>¥5</span></div>
-                <div class="menu-item"><span>Pumpkin Balls</span><span>¥3</span></div>
-                <div class="menu-item"><span>Taiwanese Sausage</span><span>¥5</span></div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Squid Ball</span>
+                        <span class="lang-cn">花枝丸</span>
+                    </span>
+                    <span>¥8/skewer</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">French Fries</span>
+                        <span class="lang-cn">薯条</span>
+                    </span>
+                    <span>¥10/portion</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Quail Egg</span>
+                        <span class="lang-cn">鹌鹑蛋</span>
+                    </span>
+                    <span>¥5/2 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fish Tofu</span>
+                        <span class="lang-cn">鱼豆腐</span>
+                    </span>
+                    <span>¥5/2 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Layered Tofu (Qianye)</span>
+                        <span class="lang-cn">千页豆腐</span>
+                    </span>
+                    <span>¥5/2 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Gluten</span>
+                        <span class="lang-cn">面筋</span>
+                    </span>
+                    <span>¥5/2 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Crispy Banana</span>
+                        <span class="lang-cn">脆皮香蕉</span>
+                    </span>
+                    <span>¥5/skewer</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fish Stick</span>
+                        <span class="lang-cn">鱼棒</span>
+                    </span>
+                    <span>¥5/2 pieces</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pumpkin Ball</span>
+                        <span class="lang-cn">南瓜球</span>
+                    </span>
+                    <span>¥3/skewer</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Rice Cake</span>
+                        <span class="lang-cn">年糕</span>
+                    </span>
+                    <span>¥5/4 slices</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Golden Crispy Rice Cake</span>
+                        <span class="lang-cn">黄金脆皮年糕</span>
+                    </span>
+                    <span>¥5/2 skewers</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Cauliflower</span>
+                        <span class="lang-cn">花菜</span>
+                    </span>
+                    <span>¥5/4 skewers</span>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="section text-center">
-        <h2>Claim Your Page</h2>
+        <h2>
+            <span class="lang-en">Claim Your Page</span>
+            <span class="lang-cn">认领您的摊位</span>
+        </h2>
         <div class="embed-container" style="height: 450px; background: transparent;">
             <iframe 
                 src="https://tally.so/embed/68y6YJ?transparentBackground=1" 

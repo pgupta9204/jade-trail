@@ -45,31 +45,569 @@
 
     <section class="section" style="max-width: 800px;">
         <div class="specialty-highlight">
-            <h3 style="color: var(--lantern);">Crispy Stir-fried Shredded Pork 🌶️</h3>
-            <p>Our signature dish: tender shredded pork stir-fried in oil until perfectly crispy.</p>
+            <h3 style="color: var(--lantern);">
+                <span class="lang-en">Crispy Stir-fried Shredded Pork 🌶️</span>
+                <span class="lang-cn">招牌脆肉丝 🌶️</span>
+            </h3>
+            <p>
+                <span class="lang-en">Our signature dish: tender shredded pork stir-fried in oil until perfectly crispy.</span>
+                <span class="lang-cn">我们的招牌菜：将鲜嫩的肉丝在油中爆炒至完美酥脆。</span>
+            </p>
         </div>
 
-        <!-- Menu Accordions -->
+        <!-- 1. Rice Noodles / Noodles -->
         <div class="accordion">
-            <button class="accordion-btn" onclick="toggleAccordion('noodles')">Noodle/Rice Dishes <span class="icon">+</span></button>
+            <button class="accordion-btn" onclick="toggleAccordion('noodles')">
+                <span>
+                    <span class="lang-en">Noodles & Rice Noodles</span>
+                    <span class="lang-cn">粉 / 面类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
             <div id="noodles" class="accordion-content">
-                <div class="menu-item"><span>Beef Soup (Noodles/Rice)</span><span>¥20</span></div>
-                <div class="menu-item"><span>Beef Offal Soup (Noodles/Rice)</span><span>¥25</span></div>
-                <div class="menu-item"><span>Spicy Beef Rice Bowl</span><span>¥28</span></div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Soup (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">牛肉汤 (粉/面)</span>
+                    </span>
+                    <span>¥20 / ¥30 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Offal Soup (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">牛杂汤 (粉/面)</span>
+                    </span>
+                    <span>¥20 / ¥30 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Tendon Soup (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">牛筋汤 (粉/面)</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Bone Meat Soup (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">牛拆骨汤 (粉/面)</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Secret Braised Beef (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">秘制红烧牛肉面 (粉/面)</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pickled Cabbage Beef (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">酸菜牛肉 (粉/面)</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Vegetarian Topping Soup (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">素浇汤 (粉/面)</span>
+                    </span>
+                    <span>¥18 / ¥23 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pork Chop (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">大排 (粉/面)</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sauce-Exploded Pork Liver (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">酱爆猪肝面 (粉/面)</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Meatball & Spicy Sauce (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">狮子头辣酱面 (粉/面)</span>
+                    </span>
+                    <span>¥25</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fried Fish & Preserved Vegetable (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">爆鱼雪菜面 (粉/面)</span>
+                    </span>
+                    <span>¥25</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pickled Cabbage & Pork Intestine (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">酸菜肥肠 (粉/面)</span>
+                    </span>
+                    <span>¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fried Fish & Spicy Sauce (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">爆鱼辣酱面 (粉/面)</span>
+                    </span>
+                    <span>¥25</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Tripe (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">牛肚面 (粉/面)</span>
+                    </span>
+                    <span>¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Braised Mutton (Noodles/Rice Noodles)</span>
+                        <span class="lang-cn">红烧羊肉 (粉/面)</span>
+                    </span>
+                    <span>¥38</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Whip Soup</span>
+                        <span class="lang-cn">牛鞭汤</span>
+                    </span>
+                    <span>¥40</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Tripe Soup</span>
+                        <span class="lang-cn">牛肚汤</span>
+                    </span>
+                    <span>¥30</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Treasure Soup</span>
+                        <span class="lang-cn">牛宝汤</span>
+                    </span>
+                    <span>¥38</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Special Handmade Dumplings</span>
+                        <span class="lang-cn">特色手工水饺</span>
+                    </span>
+                    <span>¥6/50g (Min 150g)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Special Shanghai Wontons</span>
+                        <span class="lang-cn">特色上海馄饨</span>
+                    </span>
+                    <span>¥20</span>
+                </div>
             </div>
         </div>
-        
+
+        <!-- 2. Specialty Tossed Noodles -->
         <div class="accordion" style="margin-top: 16px;">
-            <button class="accordion-btn" onclick="toggleAccordion('specials')">Shanghai Specials <span class="icon">+</span></button>
-            <div id="specials" class="accordion-content">
-                <div class="menu-item"><span>Shanghai Soup Dumplings (Small)</span><span>¥15</span></div>
-                <div class="menu-item"><span>Crab Roe Steamed Buns</span><span>¥28</span></div>
+            <button class="accordion-btn" onclick="toggleAccordion('tossed')">
+                <span>
+                    <span class="lang-en">Specialty Tossed Noodles</span>
+                    <span class="lang-cn">特色拌面类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="tossed" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Scallion Oil Noodles + Beef Soup</span>
+                        <span class="lang-cn">葱油拌面 + 牛肉汤</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Scallion Oil Noodles + Beef Offal Soup</span>
+                        <span class="lang-cn">葱油拌面 + 牛杂汤</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Scallion Oil Noodles + Beef Tendon Soup</span>
+                        <span class="lang-cn">葱油拌面 + 牛筋汤</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Scallion Oil Noodles + Beef Bone Meat Soup</span>
+                        <span class="lang-cn">葱油拌面 + 牛拆骨汤</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Secret Braised Beef Tossed Noodles + Clear Soup</span>
+                        <span class="lang-cn">秘制红烧牛肉拌面 + 清汤</span>
+                    </span>
+                    <span>¥25 / ¥35 (L)</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sauce-Exploded Pork Liver Tossed Noodles + Clear Soup</span>
+                        <span class="lang-cn">酱爆猪肝拌面 + 清汤</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pickled Cabbage Pork Intestine Tossed Noodles + Clear Soup</span>
+                        <span class="lang-cn">酸菜肥肠拌面 + 清汤</span>
+                    </span>
+                    <span>¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Scallion Oil Noodles + Beef Tripe Soup</span>
+                        <span class="lang-cn">葱油拌面 + 牛肚汤</span>
+                    </span>
+                    <span>¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Braised Mutton Tossed Noodles + Clear Soup</span>
+                        <span class="lang-cn">红烧羊肉拌面 + 清汤</span>
+                    </span>
+                    <span>¥38</span>
+                </div>
             </div>
         </div>
+
+        <!-- 3. Rice Noodle Dishes -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('rice_noodles')">
+                <span>
+                    <span class="lang-en">Rice Noodle Dishes</span>
+                    <span class="lang-cn">米粉类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="rice_noodles" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Three Delicacies Rice Noodles</span>
+                        <span class="lang-cn">三鲜米粉</span>
+                    </span>
+                    <span>¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pork Intestine Rice Noodles</span>
+                        <span class="lang-cn">肥肠米粉</span>
+                    </span>
+                    <span>¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pickled Cabbage Beef Rice Noodles</span>
+                        <span class="lang-cn">酸菜牛肉米粉</span>
+                    </span>
+                    <span>¥25</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Sauce-Exploded Pork Liver Rice Noodles</span>
+                        <span class="lang-cn">酱爆猪肝米粉</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Rice Bowls -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('rice_bowls')">
+                <span>
+                    <span class="lang-en">Rice Bowls</span>
+                    <span class="lang-cn">盖浇饭</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="rice_bowls" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Green Pepper Shredded Pork Rice Bowl</span>
+                        <span class="lang-cn">青椒肉丝饭盖浇饭</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Special Braised Chicken Rice Bowl</span>
+                        <span class="lang-cn">特色红烧鸡块盖浇饭</span>
+                    </span>
+                    <span>¥38</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Special Braised Pork Chop Rice Bowl</span>
+                        <span class="lang-cn">特色红烧大排盖浇饭</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Tomato & Egg Rice Bowl</span>
+                        <span class="lang-cn">西红柿炒蛋盖浇饭</span>
+                    </span>
+                    <span>¥26</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Braised Beef Rice Bowl</span>
+                        <span class="lang-cn">红烧牛肉盖浇饭</span>
+                    </span>
+                    <span>¥38</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Braised Pork Trotter Rice Bowl</span>
+                        <span class="lang-cn">红烧猪手盖浇饭</span>
+                    </span>
+                    <span>¥38</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Yellow Chive & Egg Rice Bowl</span>
+                        <span class="lang-cn">韭黄炒蛋盖浇饭</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Old Shanghai Snacks -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('snacks')">
+                <span>
+                    <span class="lang-en">Old Shanghai Snacks</span>
+                    <span class="lang-cn">老上海特色小吃类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="snacks" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Old Shanghai Fresh Meat Soup Dumplings</span>
+                        <span class="lang-cn">老上海鲜肉小笼</span>
+                    </span>
+                    <span>¥15</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Old Shanghai Pure Crab Roe Soup Dumplings</span>
+                        <span class="lang-cn">老上海纯蟹黄汤包</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Old Shanghai Large Crab Roe Soup Dumplings</span>
+                        <span class="lang-cn">老上海蟹黄大汤包</span>
+                    </span>
+                    <span>¥25</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Old Shanghai Crystal Shrimp Steamed Dumplings</span>
+                        <span class="lang-cn">老上海水晶虾蒸饺</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pearl Fresh Meat Steamed Dumplings</span>
+                        <span class="lang-cn">珍珠鲜肉蒸饺</span>
+                    </span>
+                    <span>¥15</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Fermented Glutinous Rice Balls</span>
+                        <span class="lang-cn">酒酿圆子</span>
+                    </span>
+                    <span>¥28</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Hot Pots -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('hotpots')">
+                <span>
+                    <span class="lang-en">Hot Pots (S / M / L)</span>
+                    <span class="lang-cn">锅仔类 (小 / 中 / 大)</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="hotpots" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Hot Pot</span>
+                        <span class="lang-cn">牛肉锅仔</span>
+                    </span>
+                    <span>¥68 / ¥88 / ¥128</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Offal Hot Pot</span>
+                        <span class="lang-cn">牛杂锅仔</span>
+                    </span>
+                    <span>¥68 / ¥88 / ¥128</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Bone Meat Hot Pot</span>
+                        <span class="lang-cn">牛拆骨锅仔</span>
+                    </span>
+                    <span>¥88 / -- / ¥148</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Tripe Hot Pot</span>
+                        <span class="lang-cn">牛肚锅仔</span>
+                    </span>
+                    <span>¥88 / -- / ¥168</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Whip Hot Pot</span>
+                        <span class="lang-cn">牛鞭锅仔</span>
+                    </span>
+                    <span>¥98 / -- / ¥188</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Special Mutton Hot Pot</span>
+                        <span class="lang-cn">特色羊肉锅仔</span>
+                    </span>
+                    <span>¥128 / -- / ¥188</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Old Duck & Beef Whip Hot Pot</span>
+                        <span class="lang-cn">老鸭牛鞭锅仔</span>
+                    </span>
+                    <span>¥138 / -- / ¥238</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Extra Toppings -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('toppings')">
+                <span>
+                    <span class="lang-en">Extra Toppings</span>
+                    <span class="lang-cn">浇头类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="toppings" class="accordion-content">
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef</span>
+                        <span class="lang-cn">牛肉</span>
+                    </span>
+                    <span>¥10</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Offal</span>
+                        <span class="lang-cn">牛杂</span>
+                    </span>
+                    <span>¥10</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Tendon</span>
+                        <span class="lang-cn">牛筋</span>
+                    </span>
+                    <span>¥15</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Beef Tripe</span>
+                        <span class="lang-cn">牛肚</span>
+                    </span>
+                    <span>¥15</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Secret Braised Beef</span>
+                        <span class="lang-cn">秘制红烧牛肉</span>
+                    </span>
+                    <span>¥15</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Pork Chop (per piece)</span>
+                        <span class="lang-cn">大排 (只)</span>
+                    </span>
+                    <span>¥15</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Meatball (per piece)</span>
+                        <span class="lang-cn">狮子头 (只)</span>
+                    </span>
+                    <span>¥10</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Preserved Vegetable</span>
+                        <span class="lang-cn">雪菜</span>
+                    </span>
+                    <span>¥5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Spicy Sauce</span>
+                        <span class="lang-cn">辣酱</span>
+                    </span>
+                    <span>¥5</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Vegetarian Chicken (per piece)</span>
+                        <span class="lang-cn">素鸡 (块)</span>
+                    </span>
+                    <span>¥3</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Egg (per piece)</span>
+                        <span class="lang-cn">鸡蛋 (只)</span>
+                    </span>
+                    <span>¥3</span>
+                </div>
+                <div class="menu-item">
+                    <span>
+                        <span class="lang-en">Vegetarian Topping</span>
+                        <span class="lang-cn">素浇</span>
+                    </span>
+                    <span>¥5</span>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer class="section text-center">
-        <h2>Claim Your Page</h2>
+        <h2>
+            <span class="lang-en">Claim Your Page</span>
+            <span class="lang-cn">认领您的摊位</span>
+        </h2>
         <div class="embed-container" style="height: 450px; background: transparent;">
             <iframe 
                 src="https://tally.so/embed/68y6YJ?transparentBackground=1" 

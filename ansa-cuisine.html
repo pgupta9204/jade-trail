@@ -45,28 +45,85 @@
 
     <section class="section" style="max-width: 800px;">
         <div class="specialty-highlight">
-            <h3 style="color: var(--lantern);">Stir-fry Noodles & Rice 🌶️</h3>
-            <p>Signature Anhui-style stir-fry dishes, perfectly wok-fired.</p>
+            <h3 style="color: var(--lantern);">
+                <span class="lang-en">Anhui Stir-fry 🌶️</span>
+                <span class="lang-cn">安徽料理 🌶️</span>
+            </h3>
+            <p>
+                <span class="lang-en">Signature Anhui-style stir-fry dishes, perfectly wok-fired.</span>
+                <span class="lang-cn">招牌安徽风味炒菜，镬气十足。</span>
+            </p>
         </div>
 
+        <!-- 1. Stir-fried Dishes -->
         <div class="accordion">
-            <button class="accordion-btn" onclick="toggleAccordion('stirfry')">Stir-fry (Fried) <span class="icon">+</span></button>
+            <button class="accordion-btn" onclick="toggleAccordion('stirfry')">
+                <span>
+                    <span class="lang-en">Stir-fried Dishes</span>
+                    <span class="lang-cn">炒菜类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
             <div id="stirfry" class="accordion-content">
-                <div class="menu-item"><span>Fried Pancake Strips</span><span>¥15</span></div>
-                <div class="menu-item"><span>Stir-fried Noodles</span><span>¥14</span></div>
-                <div class="menu-item"><span>Stir-fried Rice</span><span>¥14</span></div>
-                <div class="menu-item"><span>Stir-fried Rice Cakes</span><span>¥14</span></div>
-                <div class="menu-item"><span>Stir-fried Rice Noodles</span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Fried Pancake Strips</span><span class="lang-cn">炒饼丝</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Noodles</span><span class="lang-cn">炒面</span></span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Rice</span><span class="lang-cn">炒饭</span></span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Rice Cakes</span><span class="lang-cn">炒年糕</span></span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Rice Noodles</span><span class="lang-cn">炒河粉</span></span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Vermicelli</span><span class="lang-cn">炒粉丝</span></span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Rice Vermicelli</span><span class="lang-cn">炒米粉</span></span><span>¥14</span></div>
+                <div class="menu-item"><span><span class="lang-en">Stir-fried Instant Noodles</span><span class="lang-cn">炒泡面</span></span><span>¥14</span></div>
             </div>
         </div>
         
+        <!-- 2. Soupy Dishes -->
         <div class="accordion" style="margin-top: 16px;">
-            <button class="accordion-btn" onclick="toggleAccordion('soup')">Rice/Noodles in Soup <span class="icon">+</span></button>
+            <button class="accordion-btn" onclick="toggleAccordion('soup')">
+                <span>
+                    <span class="lang-en">Soup Dishes</span>
+                    <span class="lang-cn">汤类</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
             <div id="soup" class="accordion-content">
-                <div class="menu-item"><span>Vegetable Soup Noodles</span><span>¥15</span></div>
-                <div class="menu-item"><span>Rice in Soup</span><span>¥15</span></div>
-                <div class="menu-item"><span>Rice Cakes in Soup</span><span>¥15</span></div>
-                <div class="menu-item"><span>Wonton Soup</span><span>¥10</span></div>
+                <div class="menu-item"><span><span class="lang-en">Vegetable Soup Noodles</span><span class="lang-cn">菜汤面</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Rice in Soup</span><span class="lang-cn">汤泡饭</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Rice Cakes in Soup</span><span class="lang-cn">汤年糕</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Rice Noodles in Soup</span><span class="lang-cn">汤河粉</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Vermicelli in Soup</span><span class="lang-cn">汤粉丝</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Rice Vermicelli in Soup</span><span class="lang-cn">汤米粉</span></span><span>¥15</span></div>
+                <div class="menu-item"><span><span class="lang-en">Wonton Soup</span><span class="lang-cn">泡泡馄饨</span></span><span>¥10</span></div>
+            </div>
+        </div>
+
+        <!-- 3. Add-ons & Braised Dishes -->
+        <div class="accordion" style="margin-top: 16px;">
+            <button class="accordion-btn" onclick="toggleAccordion('add-ons')">
+                <span>
+                    <span class="lang-en">Add-ons & Braised</span>
+                    <span class="lang-cn">另加 / 卤味</span>
+                </span>
+                <span class="icon">+</span>
+            </button>
+            <div id="add-ons" class="accordion-content">
+                <div class="menu-item"><span><span class="lang-en">Ham Sausage</span><span class="lang-cn">火腿肠</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Lean Meat</span><span class="lang-cn">精肉</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Pork Tenderloin</span><span class="lang-cn">里脊</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Cured Meat</span><span class="lang-cn">腊肉</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Shrimp</span><span class="lang-cn">虾仁</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Intestine</span><span class="lang-cn">肥肠</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Squid</span><span class="lang-cn">鱿鱼</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Goose Intestine</span><span class="lang-cn">鹅肠</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Duck Gizzard</span><span class="lang-cn">鸭胗</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Duck Intestine</span><span class="lang-cn">鸭肠</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Braised Meat</span><span class="lang-cn">卤肉</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Duck Trotter</span><span class="lang-cn">鸭蹄</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Chicken Feet</span><span class="lang-cn">鸡爪</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Lion's Head Meatball</span><span class="lang-cn">狮子头</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Tofu Skin Wrap</span><span class="lang-cn">百叶包</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Braised Egg</span><span class="lang-cn">卤蛋</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Braised Sausage</span><span class="lang-cn">素肠</span></span><span>-</span></div>
+                <div class="menu-item"><span><span class="lang-en">Kelp Knot</span><span class="lang-cn">海带结</span></span><span>-</span></div>
             </div>
         </div>
     </section>
@@ -86,7 +143,6 @@
         </div>
     </footer>
 
-    <!-- Keep same JS -->
     <script>
         function toggleAccordion(id) {
             const content = document.getElementById(id);
